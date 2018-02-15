@@ -1,7 +1,9 @@
-package com.llokallasoftware.proyectoscampo;
+package com.llokallasoftware.proyectoscampo.Vista;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.llokallasoftware.proyectoscampo.R;
 
 public class ActivityPrincipal extends AppCompatActivity {
 
