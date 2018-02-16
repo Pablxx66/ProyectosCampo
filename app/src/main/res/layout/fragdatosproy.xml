@@ -23,8 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nombre" />
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView2"
@@ -37,8 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nombre" />
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView3"
@@ -46,13 +46,31 @@
             android:layout_height="wrap_content"
             android:text="Beneficiarios" />
 
-        <EditText
-            android:id="@+id/tfCantComu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Cantidad" />
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:max="40"
+                android:min="15"
+                android:progress="15" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40" />
+        </GridLayout>
 
         <TextView
             android:id="@+id/textView4"
@@ -63,18 +81,20 @@
         <Spinner
             android:id="@+id/spListaProy"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/tipos_proyecto"/>
 
         <ImageView
             android:id="@+id/imgProy"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/pruebacanal" />
+            android:src="@drawable/canal_r" />
 
         <Button
-            android:id="@+id/btSiguiente"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="siguienteActividad"
+            android:text="Siguiente" />
+
     </LinearLayout>
 </FrameLayout>
